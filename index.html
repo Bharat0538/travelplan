@@ -7,10 +7,13 @@
     <title>Wanderlust Travel - Explore the World</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS CSS for animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS (Load before AOS) -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,11 +22,10 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Wanderlust Travel Logo">
-                <h1>Wanderlust Travel</h1>
-            </div>
             <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-globe-americas"></i> Wanderlust Travel</h1>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -41,45 +43,63 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Explore The World With Us</h2>
-            <p>Discover breathtaking destinations and unforgettable experiences</p>
-            <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+        <div class="hero-content" data-aos="fade-up">
+            <h2>Adventure Awaits</h2>
+            <p>Discover breathtaking destinations and create unforgettable memories with our expertly curated travel experiences</p>
+            <div class="hero-buttons">
+                <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                <a href="destinations.html" class="btn btn-secondary">View Destinations</a>
+            </div>
         </div>
     </section>
 
     <!-- Featured Destinations -->
     <section class="featured-destinations">
         <div class="container">
-            <h2 class="section-title">Popular Destinations</h2>
+            <h2 class="section-title" data-aos="fade-up">Popular Destinations</h2>
             <div class="destinations-grid">
-                <div class="destination-card">
+                <div class="destination-card" data-aos="fade-up">
                     <img src="images/destinations/bali.jpg" alt="Bali">
                     <div class="destination-info">
+                        <span class="destination-category">Island Paradise</span>
                         <h3>Bali, Indonesia</h3>
-                        <p>Island paradise with stunning beaches and rich culture</p>
+                        <p>Experience the perfect blend of pristine beaches, ancient temples, and vibrant culture</p>
+                        <div class="destination-highlights">
+                            <span class="highlight"><i class="fas fa-umbrella-beach"></i> Beaches</span>
+                            <span class="highlight"><i class="fas fa-pray"></i> Temples</span>
+                            <span class="highlight"><i class="fas fa-utensils"></i> Cuisine</span>
+                        </div>
                         <a href="destinations.html#bali" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-                <div class="destination-card">
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="images/destinations/paris.jpg" alt="Paris">
                     <div class="destination-info">
+                        <span class="destination-category">City of Love</span>
                         <h3>Paris, France</h3>
-                        <p>The city of lights, romance, and incredible architecture</p>
+                        <p>Immerse yourself in art, history, and romance in the heart of Europe</p>
+                        <div class="destination-highlights">
+                            <span class="highlight"><i class="fas fa-monument"></i> Landmarks</span>
+                            <span class="highlight"><i class="fas fa-palette"></i> Art</span>
+                            <span class="highlight"><i class="fas fa-cheese"></i> Cuisine</span>
+                        </div>
                         <a href="destinations.html#paris" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-                <div class="destination-card">
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="images/destinations/santorini.jpg" alt="Santorini">
                     <div class="destination-info">
+                        <span class="destination-category">Mediterranean Gem</span>
                         <h3>Santorini, Greece</h3>
-                        <p>Breathtaking views and iconic white architecture</p>
+                        <p>Discover the magic of white-washed buildings and stunning sunsets</p>
+                        <div class="destination-highlights">
+                            <span class="highlight"><i class="fas fa-camera"></i> Views</span>
+                            <span class="highlight"><i class="fas fa-wine-glass"></i> Wine</span>
+                            <span class="highlight"><i class="fas fa-water"></i> Beaches</span>
+                        </div>
                         <a href="destinations.html#santorini" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-            </div>
-            <div class="center-btn">
-                <a href="destinations.html" class="btn btn-primary">View All Destinations</a>
             </div>
         </div>
     </section>
@@ -87,86 +107,103 @@
     <!-- Tour Packages Preview -->
     <section class="tour-packages-preview">
         <div class="container">
-            <h2 class="section-title">Featured Tour Packages</h2>
+            <h2 class="section-title" data-aos="fade-up">Featured Tour Packages</h2>
             <div class="packages-grid">
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up">
                     <div class="package-image">
                         <img src="images/packages/tropical-getaway.jpg" alt="Tropical Getaway">
                         <div class="package-price">$1,299</div>
                     </div>
                     <div class="package-info">
-                        <h3>Tropical Getaway</h3>
+                        <h3>Tropical Paradise Getaway</h3>
                         <p class="package-duration"><i class="far fa-clock"></i> 7 Days / 6 Nights</p>
-                        <p>Experience the best of tropical paradise with our all-inclusive package</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bed"></i> Luxury Resort</span>
+                            <span><i class="fas fa-swimming-pool"></i> Private Beach</span>
+                            <span><i class="fas fa-spa"></i> Spa Access</span>
+                        </div>
+                        <p>Experience pure bliss in our all-inclusive tropical paradise package</p>
                         <a href="packages.html#tropical-getaway" class="btn btn-secondary">View Details</a>
                     </div>
                 </div>
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="package-image">
                         <img src="images/packages/european-adventure.jpg" alt="European Adventure">
                         <div class="package-price">$2,499</div>
                     </div>
                     <div class="package-info">
-                        <h3>European Adventure</h3>
+                        <h3>European Cultural Adventure</h3>
                         <p class="package-duration"><i class="far fa-clock"></i> 12 Days / 11 Nights</p>
-                        <p>Explore the most beautiful cities in Europe with expert guided tours</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 4-Star Hotels</span>
+                            <span><i class="fas fa-train"></i> Rail Pass</span>
+                            <span><i class="fas fa-walking"></i> Guided Tours</span>
+                        </div>
+                        <p>Explore the most beautiful cities in Europe with expert guides</p>
                         <a href="packages.html#european-adventure" class="btn btn-secondary">View Details</a>
                     </div>
                 </div>
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="package-image">
                         <img src="images/packages/mountain-explorer.jpg" alt="Mountain Explorer">
                         <div class="package-price">$1,899</div>
                     </div>
                     <div class="package-info">
-                        <h3>Mountain Explorer</h3>
+                        <h3>Mountain Explorer Expedition</h3>
                         <p class="package-duration"><i class="far fa-clock"></i> 8 Days / 7 Nights</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-mountain"></i> Guided Treks</span>
+                            <span><i class="fas fa-campground"></i> Luxury Camping</span>
+                            <span><i class="fas fa-utensils"></i> Gourmet Meals</span>
+                        </div>
                         <p>Trek through breathtaking mountain landscapes with experienced guides</p>
                         <a href="packages.html#mountain-explorer" class="btn btn-secondary">View Details</a>
                     </div>
                 </div>
             </div>
-            <div class="center-btn">
-                <a href="packages.html" class="btn btn-primary">View All Packages</a>
-            </div>
         </div>
     </section>
 
-    <!-- Testimonial Preview -->
-    <section class="testimonial-preview">
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
         <div class="container">
-            <h2 class="section-title">What Our Travelers Say</h2>
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Our trip to Bali with Wanderlust Travel was absolutely incredible! Every detail was perfectly arranged, from the beautiful accommodations to the knowledgeable guides. We'll definitely book with them again!"</p>
-                    <div class="testimonial-author">
-                        <img src="images/testimonials/sarah.jpg" alt="Sarah Johnson">
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Bali Package, May 2023</p>
-                        </div>
-                    </div>
+            <h2 class="section-title" data-aos="fade-up">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <i class="fas fa-medal"></i>
+                    <h3>Expert Guides</h3>
+                    <p>Professional and knowledgeable guides for an enriching experience</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-heart"></i>
+                    <h3>Personalized Service</h3>
+                    <p>Tailored travel experiences to match your preferences</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe Travel</h3>
+                    <p>Your safety and comfort are our top priorities</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Best Value</h3>
+                    <p>Competitive prices without compromising on quality</p>
                 </div>
             </div>
-            <div class="center-btn">
-                <a href="testimonials.html" class="btn btn-secondary">Read More Reviews</a>
-            </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
+    <!-- Newsletter Section -->
+    <section class="newsletter">
         <div class="container">
-            <h2>Ready to Start Your Adventure?</h2>
-            <p>Join thousands of satisfied travelers who have experienced the world with us</p>
-            <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            <div class="newsletter-content" data-aos="fade-up">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest travel deals and updates delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -203,25 +240,14 @@
                         <li><i class="fas fa-envelope"></i> info@wanderlusttravel.com</li>
                     </ul>
                 </div>
-                <div class="footer-section newsletter">
-                    <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Wanderlust Travel. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JavaScript Libraries (Load in correct order) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript (Load last) -->
     <script src="js/script.js"></script>
 </body>
 </html> 
